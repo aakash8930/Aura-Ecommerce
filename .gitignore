@@ -49,3 +49,7 @@ packages/db/prisma/dev.db-journal
 # Build outputs
 **/dist/
 *.tsbuildinfo
+.next/
+node_modules/
+*.log
+.env
