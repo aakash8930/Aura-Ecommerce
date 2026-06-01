@@ -1,3 +1,11 @@
+
+<img width="1783" height="985" alt="Home Pgae" src="https://github.com/user-attachments/assets/dcc2dfa4-6706-40b5-a257-2f5a90a65d91" />
+<img width="1783" height="985" alt="Login" src="https://github.com/user-attachments/assets/ed4b797e-70f6-46ba-a69e-42c176b5abd5" />
+<img width="1783" height="985" alt="Product Page" src="https://github.com/user-attachments/assets/52cd890b-d09c-49c2-a060-a7fcbd6f4852" />
+<img width="1783" height="985" alt="Search" src="https://github.com/user-attachments/assets/b35a62ec-7fc0-481b-a1f0-c90a654c326c" />
+<img width="1783" height="985" alt="Categories" src="https://github.com/user-attachments/assets/977c5906-d4ed-4c68-b9bc-f6ee22adbd67" />
+<img width="1783" height="985" alt="Cart" src="https://github.com/user-attachments/assets/94045ed7-91b8-4a8e-8e28-6abc443d8a65" />
+<img width="1783" height="985" alt="CheckOut" src="https://github.com/user-attachments/assets/11d777ec-6f60-4f7e-b886-6d6dfd1f928b" />
 # Aura E-Commerce
 
 A full-stack e-commerce platform built as a **portfolio project** to demonstrate end-to-end product engineering: authentication, payments, admin tooling, monorepo architecture, and a polished, redesigned UI/UX. Three independent apps share a single SQLite database through Prisma:
