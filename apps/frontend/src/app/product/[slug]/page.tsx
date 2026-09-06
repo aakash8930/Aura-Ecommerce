@@ -5,6 +5,7 @@ import AddToCartButton from "@/components/AddToCartButton";
 import ProductCard from "@/components/ProductCard";
 import ReviewsSection from "@/components/ReviewsSection";
 import QuestionsSection from "@/components/QuestionsSection";
+import ProductViewer3D from "@/components/ProductViewer3D";
 import { api } from "@/lib/api";
 import type { Product, Review, ProductQuestion } from "@/lib/types";
 import styles from "./product.module.css";
@@ -13,7 +14,7 @@ export const dynamic = "force-dynamic";
 
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-
+  
   const productRes = await api
     .get<{ product: Product; related: Product[] }>(`/api/products/${slug}`)
     .catch(() => null);
@@ -45,9 +46,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       </nav>
 
       <div className={styles.productLayout}>
-        <div className={`${styles.imageContainer} glass`}>
-          {product.badge && <span className={`badge ${styles.detailBadge} badge-${product.badge.toLowerCase()}`}>{product.badge}</span>}
-          <Image src={product.imageUrl} alt={product.name} fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+        {/* 3D Viewer Section */}
+        <div className={`${styles.viewer3DContainer} glass`}>
+          <ProductViewer3D 
+            productName={product.name}
+            productPrice={product.price}
+            onAddToCart={() => {}}
+          />
         </div>
 
         <div className={styles.productDetails}>
